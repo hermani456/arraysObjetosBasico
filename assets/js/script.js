@@ -131,9 +131,9 @@ const dental = [
    },
 ]
 
-// funcion que crea las tablas recibiento 3 argumentos, array, la clase y title
-const creaTabla = (array, claseTabla, title) => {
-   const tabla = document.querySelector(claseTabla)
+// funcion que crea las tablas recibiento 3 argumentos: id, array y title
+const creaTabla = (tableId, array, title) => {
+   const tabla = document.querySelector(tableId)
    let col = `<caption class="fw-bold text-dark">${title}</caption>
             <tr>
                <th scope="col">HORA</th>
@@ -156,20 +156,20 @@ const creaTabla = (array, claseTabla, title) => {
 }
 
 // creando las tablas para radiologia, traumatologia y dental
-creaTabla(radiologia, ".table1", "Radiologia")
-creaTabla(traumatologia, ".table2", "Traumatologia")
-creaTabla(dental, ".table3", "Dental")
+creaTabla("#table1", radiologia, "Radiologia")
+creaTabla("#table2", traumatologia, "Traumatologia")
+creaTabla("#table3", radiologia, "Dental")
 
-// funcion que escribe al final de cada tabla la primera y ultima atencion de cada array. Recibe 2 argumentos, la clase para aplicar el texto y el arrray.
-const atencion = (clase, array) => {
-   const texto = document.querySelector(clase)
+// funcion que escribe al final de cada tabla la primera y ultima atencion de cada array. Recibe 2 argumentos, el id donde aplicar el texto y el arrray.
+const atencion = (textId, array) => {
+   const texto = document.querySelector(textId)
    texto.innerHTML = `Primera atencion: ${array[0].PACIENTE} - ${array[0].PREVISION} | Ultima atencion: ${array[array.length - 1].PACIENTE} - ${array[array.length - 1].PREVISION}`
 }
 
 // escribiendo cual fue la primera y ultima atencion en cada array
-atencion(".text1", radiologia)
-atencion(".text2", traumatologia)
-atencion(".text3", dental)
+atencion("#text1", radiologia)
+atencion("#text2", traumatologia)
+atencion("#text3", dental)
 
 
 
