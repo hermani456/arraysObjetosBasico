@@ -1,2 +1,2 @@
 # arraysObjetosBasico
-### visitame: http://malatuca.ga/arraysObjetosBasico/
+### Visitame: http://diegocampuzano.ml/arraysObjetosBasico/
