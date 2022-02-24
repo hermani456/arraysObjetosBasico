@@ -158,7 +158,7 @@ const creaTabla = (tableId, array, title) => {
 // creando las tablas para radiologia, traumatologia y dental
 creaTabla("#table1", radiologia, "Radiologia")
 creaTabla("#table2", traumatologia, "Traumatologia")
-creaTabla("#table3", radiologia, "Dental")
+creaTabla("#table3", dental, "Dental")
 
 // funcion que escribe al final de cada tabla la primera y ultima atencion de cada array. Recibe 2 argumentos, el id donde aplicar el texto y el arrray.
 const atencion = (textId, array) => {
