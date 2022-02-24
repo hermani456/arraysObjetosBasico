@@ -134,7 +134,7 @@ const dental = [
 // funcion que crea las tablas recibiento 3 argumentos: id, array y title
 const creaTabla = (tableId, array, title) => {
    const tabla = document.querySelector(tableId)
-   let col = `<caption class="fw-bold text-dark">${title}</caption>
+   let col = `<caption class="fw-bold">${title}</caption>
             <tr>
                <th scope="col">HORA</th>
                <th scope="col">ESPECIALISTA</th>

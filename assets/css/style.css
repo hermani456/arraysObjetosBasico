@@ -1,0 +1,15 @@
+body{
+   font-family: 'Roboto', sans-serif;
+   background-color: #2B2D42;
+   color: #EDF2F4;
+}
+caption{
+   color: #8D99AE
+}
+h1{
+   color: #AF5D63
+}
+a{
+   color: #EDF2F4;
+   text-decoration: none;
+}
